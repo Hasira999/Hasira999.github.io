@@ -3,97 +3,31 @@
 	<head>
 		<title>Hansali <3</title>
 		<link rel="stylesheet" href="/css/main.css" type = "text/css" >
+        <script>
+            function validateForm(form) {
+
+                pTest = /^hasira$/;
+
+                if (!pTest.test(form.pass.value)) {
+                    document.getElementById('error').style.display = "block";
+                    document.getElementByID('link').style.display = "none";
+                    isValid = false;
+                } else {
+                    document.getElementByID('link').style.display = "block";
+                    document.getElementById('error').style.display = "none";
+                }
+                return isValid;
+            }
+        </script>
 	</head>
 	<body>
-		<header>
-            <br>
-            <br>
-            <br>
-			<h1> APOLOGY / pouring my heart out ( whatever works best ) </h1>
-		</header>
+            <form method = "get" action = "check.html" onsubmit = " return validateForm();">
+                <label for = "pass"> Enter Password </label>
+                <input type = "password" id = "pass" name = "pass">
+                <p><span class = "error" id = "error"> Please enter the correct password </span></p>
+                <p> <span class = "link" id = "link" > <a href = "index.html "> Link to original website </a></span></p>
+            </form>
+            
 
-		<div>
-            <p> Hey Hansali, it's that weirdo again. How have you been ? </p>
-            <br>
-            <br>
-            <p>
-                I know that you have been ignoring me, and there's absolutely 1000+ reasons for you to ignore me so no offence taken.
-            </p>
-            <br>  
-            <p>
-                As far as I know it was the tiktok I sent that made u hate me, the one where I termed myself a guy who is " persistent ", well it was all in good fun and 
-                I didn't really mean it, I know it sounds like I am just apologizing again like I did after every time I fucked up things with you, just to fuck things up with 
-                you again in a week or so. And I am sorry for making you feel any type of way bad about yourself for entertaining a dude who is just trying to cause havoc 
-                in ur life.
-            </p>
-            <br>
-            <p>
-               I know this seems bizarre and stupid and fucked up to the maximum ( least that's the way I feel ). Like how can you fall so fucking hard for a girl you have
-               talked with for approx 15 minutes whilst getting ur hand low key burnt over some stupid fire while u roast some shrimp on the barbie ( well there wasn't really 
-               any shrimp in there but, I had to use that phrase for shits and gags)
-            </p>
-            <br>
-            <p>
-                But honestly, I did fall hard. I fell so hard that I started having 2 way convos with "you" and myself ( both ends narrated by me ofc ). It wasn't anything related 
-                to sex either, it was just normal day-to-day talk, well I have to admit that cos it was all in my head I made u in my head appear slightly more attracted 
-                to me lel.
-            </p>
-            <br>
-            <p> 
-                Ur name appearing on my phone gave me so much joy. Alright enough with the cliche stuff ( but it did really happen ). Oh and 1 more thing. Yaknow the facebook
-                stories ? Yeah, only u can view them so I am not a lunatic ( u just made a whole webpage for her Hasira, u are a lunatic fool ) .
-            </p>
-            <br>
-            <p>
-                Alright, now let me tell you what I really want you to grasp from this whole thing. I would legitimately die for you, idk why, idk wtf is wrong with me 
-                but there u go. U heard ( read ) it from me itself. 
-            </p>
-            <br>
-            <p>
-                Now the second thing I want you to grasp from this is, this is my 6th month in and still my feelings are as 
-                they were on January, I know you do not want absolutely anything to do with me, and I know that u wouldn't care if I was dead on the streets ( was a tough couple
-                of months but I realised that eventually - the truth is indeed bitter ).
-            </p>
-            <br>
-            <p>
-                And the final thing I want you to understand is, that it is alright for you to actually
-                not care, and rightfully so, u don't even know me properly, and the inital impression I gave off is not that good, I know. Heck you prolly think it's better
-                to stay away from this psycho after reading all this.
-            </p>
-            <br>
-            <p>
-                Well now that I have poured my heart out for good measure, I think it is time to finally move on. This may seem like simping. I hate that word. A woman
-                should be treated properly, and that should not be shamed upon. Doesn't matter, kids these days, idc. Anyway, all that you have to know is that ur probably the only
-                girl in the world who received something like this. I won't get into the technical details of how I made this work but. 
-            </p>
-            <br>
-            <P>
-                Anyway Hansali, now that I have said what I have to say, just know that if you ever need me, I'll be right there. Whether it is to offer you any help
-                or if it is to take care of you or to hold ur hair while ur throwing up into the toilet.
-            </P>
-            <br>
-            <p>
-                I just said what I had crowded up in my mind for the past few weeks. I wouldve sent this to you sooner but coudnt risk fucking up finals.
-            </p>
-            <br>
-            <p>
-                I have 1 thing to ask you though. Please don't make this something I regret doing when I look back at it at a future point. i.e please keep this between 
-                just the two of us. I would appreciate it so much if you could. heck, u can tell it to ur kids tho, tell them of the story of how that 1 lunatic from
-                ur past created some webpage just cos he didnt have anything else to do.
-            </p>
-            <br>
-            <p>
-                On a final note, I'll leave you alone from now on. You have my word. But please x3 keep this just between the 2 of us. I don't really care if this gets 
-                out or whatever, I just said what's in my mind, and I don't think I hurt u in anyway after saying all this so yeah.
-
-                honestly, most people would just let this grow old with time, guess im not most people
-            </p>
-            <br>
-            <p> 
-                honestly I didnt modify this in any sort of way, just made my fingers move over the keys with the thoughts in my head. please send a skull emoji
-                if u made it this far, thanks.
-            </p>
-        </div>	
-		
-	</body>
+    </body>
 </html>
