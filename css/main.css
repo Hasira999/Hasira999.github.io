@@ -14,3 +14,7 @@ p {
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
+
+div {
+    line-height : 1.2;
+}
