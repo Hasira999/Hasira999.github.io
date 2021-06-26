@@ -2,40 +2,21 @@
 <html>
 	<head>
 		<title>Hansali <3</title>
-        <script>
-            function validateForm(form) {
-
-                pTest = /^hasira$/;
-
-                if (!pTest.test(form.pass.value)) {
-                    document.getElementById('error').style.display = "block";
-                    document.getElementByID('link').style.display = "none";
-                    isValid = false;
-                } else {
-                    document.getElementByID('link').style.display = "block";
-                    document.getElementById('error').style.display = "none";
-                }
-                return isValid;
-            }
-        </script>
-
+        <script defer src ="check.js"> </script>
         <style>
-            .error {
-                display :none;
-            }
-            .link {
-                display :none;
+            #error {
+                color:red;
             }
         </style>
+
 	</head>
 	<body>
-            <form method = "get" action = "index.html" onsubmit = " return validateForm();">
+            <form id = "form" method = "get" action = "/" >
                 <label for = "pass"> Enter Password </label>
                 <input type = "password" id = "pass" name = "pass">
-                <p><span class = "error" id = "error"> Please enter the correct password </span></p>
-                <p> <span class = "link" id = "link" > <a href = "apology.html"> Link to original website </a></span></p>
                 <input type = "submit" name = "submit" id = "submit" >
             </form>
+            <div id = "error" ></div>
             
 
     </body>
