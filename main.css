@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.info {
+    width : 75%;
+}
+
+.left {
+    width : 25%;
+}
+
+.mid {
+    width : 25%;
+}
+
+.right {
+    width : 25%;
+}
