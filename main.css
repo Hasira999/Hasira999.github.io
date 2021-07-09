@@ -1,0 +1,316 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin:0;
+}
+body {
+    margin :0;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    color: #212529;
+  
+
+}
+
+.header {
+    width: 80%;
+}
+
+header {
+    background-color: #c1c8e4;
+    margin :0 auto;
+   
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear :both;
+}
+
+nav {
+    float:right;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 80px;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Lato, sans-serif;
+    font-size: 125%;
+    font-weight: bold;
+    color:#134555;
+    
+}
+
+nav a:hover{
+    color:teal;
+}
+
+img {
+    width: 1000px;
+    height :400px; 
+    font-style: center;
+}
+
+.col {
+    float:left;
+    width: 100%;
+    height :50%;
+    padding:5px;
+    margin:0;
+
+}
+
+.row {
+    
+    padding-bottom: 100px;
+}
+
+.row::after {
+    content:"";
+    display:table;
+    clear:both;
+
+}
+
+
+/* content */
+
+.intro {
+    padding-top: 20px;
+    color:#061345;
+}
+
+#left {
+    float:left;
+    padding-left: 50px;
+    padding-top:10px;
+    padding-bottom:30px;
+}
+
+#right {
+    float:right;
+    padding-right: 50px;
+    padding-top:10px;
+    padding-bottom:30px;
+}
+
+/* title of the webpage */
+
+.intro::after{
+    content: '';
+    display: table;
+    clear :both;
+}
+
+.title span {
+    text-align: center;
+    color:#0f50ac;  
+    
+    font-size: 150%;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 100%;
+    
+}
+
+
+.info { 
+    margin:0;
+}
+
+.one{
+    padding-left: 50px;
+    padding-bottom:100px;
+    padding-top:50px;
+    margin-bottom:50px;
+    background-color: #EBEFFE;
+    padding-right:100px;
+    
+}
+
+.one p{
+    font-size: 125%;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+.services {
+    text-align: center;
+}
+
+.two{
+    padding-left: 50px;
+    padding-bottom:100px;
+    padding-top:50px;
+    margin-bottom:50px;
+    padding-right:100px;
+}
+
+.two p{
+    font-size: 125%;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+h2{
+    font-size: 175%;
+    text-align: center;
+    padding-bottom : 20px;
+}
+
+
+.content {
+    font-size: 90%;
+    text-align: left;
+}
+
+.content ul {
+    padding-left: 200px;
+    padding-bottom: 50px;
+    line-height: 1.5;
+    font-size: 125%;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    
+}
+
+.content ol {
+    padding-left: 200px;
+    padding-bottom: 50px;
+    line-height: 1.5;
+    font-size: 125%;
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+}
+
+.content p{
+    text-align: left;
+    padding-left: 125px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    
+}
+
+.content h2{
+    text-align: left;
+    padding-left: 100px;
+}
+
+.content h1 {
+    text-align: center;
+    padding-bottom: 100px;
+    color:#425664;
+}
+
+
+
+footer{
+    background-color: #c1c8e4;
+    height: 100px;
+    padding-left :50px;
+    padding-top:20px;
+    font-weight: 500;
+}
+
+
+a {
+    color:#0f50ac;
+}
+
+
+p{
+    line-height: 2;
+}
+
+.page-nav {
+    padding-left: 50px;
+    font-size: 150%;
+   
+}
+
+.page-nav ul {
+    list-style-type: none;
+    line-height: 2;
+}
+
+.page-nav h3 {
+    padding-bottom: 20px;
+}
+
+.page-nav a{
+    text-decoration: none;
+    color :blue
+    
+}
+
+.page-nav a:hover {
+    background-color: #b7bbd3;
+}
+
+.map {
+    text-align: center;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    
+    .hamburger{
+        display: inline;
+    }
+
+    
+    #myLinks {
+        display: none;
+    }
+
+    /*
+    .header {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }*/
+
+    .header #myLinks {
+        display: none;
+    }
+
+    .header a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+    }
+
+     /* Style the hamburger menu */
+     .header a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+    }
+
+}
